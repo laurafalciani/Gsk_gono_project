@@ -1,0 +1,26 @@
+01/24/2022 03:47:35 PM    ==== Scoary started ====
+01/24/2022 03:47:35 PM    Command: /home/lf481323/.conda/envs/pytorch-env/bin/scoary -g /home/lf481323/Roary_output_all_last_touse/gene_presence_absence.csv -t lin_scoary.csv
+01/24/2022 03:47:35 PM    Reading gene presence absence file
+01/24/2022 03:47:36 PM    Creating Hamming distance matrix based on gene presence/absence
+01/24/2022 03:47:36 PM    Building UPGMA tree from distance matrix
+01/24/2022 03:47:38 PM    Reading traits file
+01/24/2022 03:47:38 PM    Finished loading files into memory.
+
+
+01/24/2022 03:47:38 PM    ==== Performing statistics ====
+01/24/2022 03:47:38 PM    -- Filtration options --
+01/24/2022 03:47:38 PM    Individual (Naive):    0.05
+01/24/2022 03:47:38 PM    Collapse genes:    False
+
+
+01/24/2022 03:47:38 PM    Tallying genes and performing statistical analyses
+01/24/2022 03:47:38 PM    Gene-wise counting and Fisher's exact tests for trait: lineage
+01/24/2022 03:47:42 PM    Adding p-values adjusted for testing multiple hypotheses
+01/24/2022 03:47:42 PM    Storing results: lineage
+01/24/2022 03:47:42 PM    Calculating max number of contrasting pairs for each nominally significant gene
+01/24/2022 03:47:50 PM    Storing results to file
+01/24/2022 03:47:50 PM    
+
+01/24/2022 03:47:50 PM    ==== Finished ====
+01/24/2022 03:47:50 PM    Checked a total of 4121 genes for associations to 1 trait(s). Total time used: 14 seconds.
+01/24/2022 03:47:50 PM    No warnings were recorded.

@@ -1,0 +1,35 @@
+01/24/2022 03:41:29 PM    ==== Scoary started ====
+01/24/2022 03:41:29 PM    Command: /home/lf481323/.conda/envs/pytorch-env/bin/scoary -g /home/lf481323/Roary_output_all_last_touse/gene_presence_absence.csv -t lin_scoary.csv
+01/24/2022 03:41:29 PM    Reading gene presence absence file
+01/24/2022 03:41:30 PM    Creating Hamming distance matrix based on gene presence/absence
+01/24/2022 03:41:31 PM    Building UPGMA tree from distance matrix
+01/24/2022 03:41:32 PM    Reading traits file
+01/24/2022 03:41:32 PM    ERROR: Some isolates in your gene presence absence file were not represented in your traits file. These will count as MISSING data and will not be included.
+01/24/2022 03:41:32 PM    Finished loading files into memory.
+
+
+01/24/2022 03:41:32 PM    ==== Performing statistics ====
+01/24/2022 03:41:32 PM    -- Filtration options --
+01/24/2022 03:41:32 PM    Individual (Naive):    0.05
+01/24/2022 03:41:32 PM    Collapse genes:    False
+
+
+01/24/2022 03:41:32 PM    Tallying genes and performing statistical analyses
+01/24/2022 03:41:32 PM    Gene-wise counting and Fisher's exact tests for trait: lineage
+01/24/2022 03:41:32 PM    CRITICAL: Could not find 13685 in the genes file.
+01/24/2022 03:41:32 PM    CRITICAL:
+Traceback (most recent call last):
+  File "/home/lf481323/.conda/envs/pytorch-env/lib/python3.8/site-packages/scoary/methods.py", line 950, in Perform_statistics
+    if int(traits[t]) == 1 and genes[t] == 1:
+KeyError: '13685'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lf481323/.conda/envs/pytorch-env/lib/python3.8/site-packages/scoary/methods.py", line 278, in main
+    RES_and_GTC = Setup_results(genedic, traitsdic, args.collapse)
+  File "/home/lf481323/.conda/envs/pytorch-env/lib/python3.8/site-packages/scoary/methods.py", line 798, in Setup_results
+    stats = Perform_statistics(traitsdic[trait], genedic[gene])
+  File "/home/lf481323/.conda/envs/pytorch-env/lib/python3.8/site-packages/scoary/methods.py", line 979, in Perform_statistics
+    sys.exit("Make sure strains are named the same in your "
+SystemExit: Make sure strains are named the same in your traits file as in your gene presence/absence file
