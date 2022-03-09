@@ -1,6 +1,6 @@
 # Gsk_gono_project
 
--prokkaRoaryBlast:
+-prokkaRoaryBlast
 	prokka script: 6_runprokka_BGxx_v2.sh
 	roary script: run_roary
 	blast script: run_blast
