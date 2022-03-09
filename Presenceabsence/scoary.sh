@@ -1,0 +1,1 @@
+scoary -g /home/lf481323/Roary_output_all_last_touse/gene_presence_absence.csv -t trait.csv
